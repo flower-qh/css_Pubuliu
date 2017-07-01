@@ -1,0 +1,151 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-image: url(../img/siteBackground.jpg);
+	font-family: 'Karla', serif;
+}
+nav{
+	background: white;
+	padding: 5px 0px;
+	box-shadow: 3px 3px 3px gray;
+	text-align: center;
+}
+nav li{
+	list-style-type: none;
+	display: inline;
+	padding: 3px 10px;
+}
+#a1{
+	color: #1c6cbe;
+}
+nav a{
+	text-decoration: none;
+	font-size: 1.2em;
+	font-family: 'Courgette', cursive;
+	color:#5d5d5d;
+}
+nav a:hover{
+	color: #1C6CBE;
+}
+h1{
+	text-align: center;
+	padding: 20px;
+	font-family:'Courgette', cursive ;
+	
+}
+h1 a{
+	text-decoration: none;
+	color:#5d5d5d;
+	font-size: 1.2em;
+}
+h1 a:hover{
+	color: #1C6CBE;
+	font-family: 'Courgette', cursive ;
+	
+}
+.wrapper{
+	width: 95%;
+	margin: 0 auto;
+	padding: 0px 0px 0px 10px;
+}
+.content{
+	margin: 0 auto;
+	column-count: 5;
+	-webkit-column-count: 5;
+	column-gap: 10px;
+	-webkit-column-gap: 10px;
+	column-fill:auto;
+	-webkit-column-fill: auto;
+}
+
+.box{
+	width: 95%;
+	display:inline-block;
+	margin: 15px 5px;
+	background: #FFFFFF;
+	
+}
+
+.box_img{
+	width: 90%;
+	margin: 0px auto;
+	padding: 12px 0px;
+}
+.box_img img{
+	width: 100%;
+	transition:0.2s ease;
+}
+.box_img img:hover{
+	box-shadow: 5px 5px 3px darkgray;
+}
+
+h2{
+	padding-bottom: 6px;
+	padding-left:12px ;
+	font-family: 'Courgette', cursive;
+	font-size: 18px;
+	color: #808080;
+}
+p{
+	
+	font-size: 15px;
+	padding-bottom: 6px;
+	padding-left:12px ;
+	padding-right:12px ;
+	line-height: 20px;
+	font-family: "arial, helvetica, sans-serif";
+	color:#808080;
+}
+.box a{
+	color: #1C6CBE;
+	display: block;
+	background: lightgrey;
+	text-align: center;
+	padding: 8px 0px;
+	text-decoration: none;
+	font-family: '"blackadder itc"';
+	font-size: 18px;
+}
+footer{
+	width: 100%;
+	height: 150px;
+	background: lavender;
+	font-family: '"blackadder itc"';
+	text-align: center;
+	font-size: 13px;
+	color: gray;
+}
+footer a{
+	color: #1C6CBE;
+	line-height: 150px;
+	
+	
+}
+/* for 960px or less */
+@media only screen and (max-width:960px ) {
+	.wrapper{
+		width:93.75%; /* 960px/1024px  */
+		margin: 0px auto;
+	}
+}
+/* for 768px or less */
+@media only screen and (max-width:768px ) {
+	.content{
+	margin: 0 auto;
+	column-count: 4;
+	-webkit-column-count: 4;
+	}
+}
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+	.content{
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}	
+	h1 a {
+		font-size:0.7em; 
+	}
+}
